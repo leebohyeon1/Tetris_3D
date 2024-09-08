@@ -104,7 +104,7 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
         if (runner.IsServer)
         {
             // 예시: 플레이어 수에 따라 역할을 할당
-            PlayerRole role = (player.RawEncoded % 2 == 0) ? PlayerRole.Tetris : PlayerRole.Avoider;
+            //PlayerRole role = (player.RawEncoded % 2 == 0) ? PlayerRole.Tetris : PlayerRole.Avoider;
 
             // Create a unique position for the player
             Vector3 spawnPosition = new Vector3((player.RawEncoded % runner.Config.Simulation.PlayerCount) * 3, 1, 0);
